@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.fragment.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="start">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="start"
+            android:background="@drawable/bg_layout">
+
+            <TextView
+                android:id="@+id/tx_nama_pengirim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Pengirim"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/in_nama_pengirim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:hint="Pengirim"
+                android:inputType="text"
+                android:textColorHint="@color/metal_grey"
+                android:textColor="@color/black"
+                android:background="@drawable/textedit"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="14dp"/>
+
+            <TextView
+                android:id="@+id/tx_kota_pengirim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kota Pengirim"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/in_kota_pengirim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:hint="Nama kota pengirim"
+                android:inputType="text"
+                android:focusable="false"
+                android:textColorHint="@color/metal_grey"
+                android:textColor="@color/black"
+                android:background="@drawable/textedit"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="14dp"/>
+
+            <View
+                android:layout_width="380dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/silver"
+                android:layout_marginBottom="14dp"/>
+
+            <TextView
+                android:id="@+id/tx_nama_penerima"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Penerima"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/in_nama_penerima"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:hint="Penerima"
+                android:inputType="text"
+                android:textColorHint="@color/metal_grey"
+                android:textColor="@color/black"
+                android:background="@drawable/textedit"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="14dp"/>
+
+
+
+            <TextView
+                android:id="@+id/tx_kota_penerima"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kota Penerima"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/in_kota_penerima"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:hint="Nama kota penerima"
+                android:inputType="text"
+                android:focusable="false"
+                android:textColorHint="@color/metal_grey"
+                android:textColor="@color/black"
+                android:background="@drawable/textedit"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="14dp"/>
+
+            <View
+                android:layout_width="380dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/silver"
+                android:layout_marginBottom="14dp"/>
+
+            <TextView
+                android:id="@+id/tx_nama_barang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Barang"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/in_nama_barang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:hint="Nama barang"
+                android:inputType="text"
+                android:textSize="18sp"
+                android:textColorHint="@color/metal_grey"
+                android:textColor="@color/black"
+                android:background="@drawable/textedit"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="14dp"/>
+
+            <TextView
+                android:id="@+id/tx_berat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Berat Barang"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/in_berat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:hint="Berat dalam gram"
+                android:inputType="number"
+                android:textColorHint="@color/metal_grey"
+                android:textColor="@color/black"
+                android:background="@drawable/textedit"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="20dp"/>
+
+            <View
+                android:layout_width="380dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/silver"
+                android:layout_marginBottom="14dp"/>
+
+            <Button
+                android:id="@+id/btn_cekongkir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Cek Ongkos Kirim"
+                android:background="@drawable/bg_button"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="15dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:max="100"
+                android:progress="100" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mohon tunggu, sedang menampilkan data..."
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            tools:listitem="@layout/list_item_main" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
